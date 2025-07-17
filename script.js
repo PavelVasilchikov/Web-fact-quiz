@@ -135,6 +135,7 @@ function loadQuiz() {
 function selectAnswer(answer) {
   const current = quizData[currentQuiz];
   const correct = current.answer;
+  const question = current.question;
   const explanation = current.explanation;
 
   const buttons = quizEl.querySelectorAll("button");
@@ -148,6 +149,8 @@ function selectAnswer(answer) {
     }
   });
 
+  if (question === 'Большинство программистов знает, как готовить безе') 
+    document.querySelector('#img-2').classList.add("blink");
   if (answer === correct) score++;
   else document.querySelector("#img-1").classList.add("fastShowRight");
   setTimeout(
