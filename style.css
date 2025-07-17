@@ -117,3 +117,25 @@ footer {
   font-size: 0.9em;
   color: #666;
 }
+
+.img_1 {
+  background: url("./img/1.png") no-repeat center / contain;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  transform: translate(100%, 100%);
+  
+}
+
+.fastShowRight {
+  animation-duration: 2500ms;
+  animation-name: fastShowRight;
+}
+
+@keyframes fastShowRight {
+  0% { transform: translate(100%, 100%); }
+  50% { transform: translate(0, 0); }
+  100% { transform: translate(100%, 100%); }
+}
