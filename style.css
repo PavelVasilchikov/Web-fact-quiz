@@ -132,6 +132,7 @@ footer {
 .fastShowRight {
   animation-duration: 2500ms;
   animation-name: fastShowRight;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fastShowRight {
