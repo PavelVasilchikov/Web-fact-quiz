@@ -125,10 +125,17 @@ footer {
   right: 0;
   width: 400px;
   height: 400px;
+  transform: translate(100%, 100%);
+  
+}
+
+.fastShowRight {
+  animation-duration: 2500ms;
+  animation-name: fastShowRight;
 }
 
 @keyframes fastShowRight {
-  0% { transform: translate(-100%, 0); }
+  0% { transform: translate(100%, 100%); }
   50% { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); }
+  100% { transform: translate(100%, 100%); }
 }
